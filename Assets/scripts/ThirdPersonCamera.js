@@ -5,17 +5,17 @@ private var _target : Transform;
 
 // The distance in the x-z plane to the target
 
-var distance = 7.0;
+var distance = 3.5;
 
 // the height we want the camera to be above the target
-var height = 3.0;
+var height = 1.9;
 
-var angularSmoothLag = 0.3;
-var angularMaxSpeed = 15.0;
+var angularSmoothLag = 0.03;
+var angularMaxSpeed = 60.0;
 
-var heightSmoothLag = 0.3;
+var heightSmoothLag = 0.05;
 
-var snapSmoothLag = 0.2;
+var snapSmoothLag = 0.05;
 var snapMaxSpeed = 720.0;
 
 var clampHeadPositionScreenSpace = 0.75;
@@ -25,9 +25,9 @@ var lockCameraTimeout = 0.2;
 private var headOffset = Vector3.zero;
 private var centerOffset = Vector3.zero;
 
-private var heightVelocity = 0.0;
-private var angleVelocity = 0.0;
-private var snap = false;
+private var heightVelocity = 25.0;
+private var angleVelocity = 60.0;
+private var snap = true;
 private var controller : ThirdPersonController;
 private var targetHeight = 100000.0; 
 

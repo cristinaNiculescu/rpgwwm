@@ -21,7 +21,7 @@ public class RabbitActionController : MonoBehaviour {
 		controller = GetComponent<CharacterController>();
 	}
 
-	void OnGUI()
+	/*void OnGUI()
 	{
 		if (GUI.Button(new Rect(10, 10, 150, 40), "Punch"))
 		{
@@ -48,7 +48,7 @@ public class RabbitActionController : MonoBehaviour {
 			animator.Play(hashJump);
 		}
 	}
-	
+	*/
 	// Update is called once per frame
 	void Update () {
 
